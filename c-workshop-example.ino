@@ -8,8 +8,7 @@ void setup()
 
     pinMode(RELAY_PIN, OUTPUT);
 
-    rockets_client::init("csiwiki.me.columbia.edu", 3001, "/rocketsdata2", "0",
-                         "DummyRelayTest");
+    rockets_client::init(rockets_client::serverConfigPresets.MECHE, "0", "DummyRelayTest");
 }
 
 void loop()
